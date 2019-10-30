@@ -1,0 +1,18 @@
+﻿  processManager.cpp
+C:\Users\kunes\Desktop\viral\viral\global.h(16,1): warning C4005: 'CURL_STATICLIB': macro redefinition
+  screen.cpp
+C:\Users\kunes\Desktop\viral\viral\processManager.cpp : message : see previous definition of 'CURL_STATICLIB'
+C:\Users\kunes\Desktop\viral\viral\global.h(16,1): warning C4005: 'CURL_STATICLIB': macro redefinition
+  threadManager.cpp
+C:\Users\kunes\Desktop\viral\viral\screen.cpp : message : see previous definition of 'CURL_STATICLIB'
+C:\Users\kunes\Desktop\viral\viral\global.h(16,1): warning C4005: 'CURL_STATICLIB': macro redefinition
+  viral.cpp
+C:\Users\kunes\Desktop\viral\viral\threadManager.cpp : message : see previous definition of 'CURL_STATICLIB'
+C:\Users\kunes\Desktop\viral\viral\global.h(16,1): warning C4005: 'CURL_STATICLIB': macro redefinition
+C:\Users\kunes\Desktop\viral\viral\viral.cpp : message : see previous definition of 'CURL_STATICLIB'
+  Generating code
+  0 of 274 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  viral.vcxproj -> C:\Users\kunes\Desktop\viral\x64\Release\viral.exe
