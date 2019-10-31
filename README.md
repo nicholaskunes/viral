@@ -10,16 +10,13 @@ Viral ```can NOT be deployed``` straight out of the github repository. I current
 
 ### server -> client
 
-``` /*
-			INFO:
+``` 
 				CMD:	setstatus
 				ARGS:	int (DEFCON level)
 				DESC:	Upgrades/Downgrades Viral's DEFCON level
-			*/
+			
 
-			/*
-			INFO:
 				CMD:	killviral
 				ARGS:	[NULL]
 				DESC:	Kills Viral. This method will succeed. It is the kill-switch.
-			*/
+			
