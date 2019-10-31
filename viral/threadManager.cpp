@@ -1,11 +1,12 @@
 #include "global.h"
 
-DWORD ThreadManager::createThread(char* threadName, VOID* threadAddress)
+DWORD ThreadManager::createThread(char* threadName, std::thread* thread)
 {
-	HANDLE threadHandle = CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)threadAddress, NULL, NULL, NULL);
+	HANDLE threadHandle = (*thread).native_handle();
 	if (threadHandle) {
 		viralThread* vThread = (viralThread*)malloc(sizeof(viralThread));
 		vThread->threadHandle = threadHandle;
+		vThread->threadActual = thread;
 		viralThreads[std::string(threadName)] = vThread;
 		return SUCCESS;
 	}
